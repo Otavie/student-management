@@ -5,7 +5,7 @@
                 <h2>To <span class="h2-leap">Become</span> a:</h2>
             </div>
 
-            <div class="become-button-container">
+            <div class="become-button-container" id="become-button-container">
                 <button class="become-button fullstack-engineer">Fullstack Engineer</button>
                 <button class="become-button frontend-developer">Frontend Developer</button>
                 <button class="become-button backend-developer">Backend Developer</button>
@@ -53,12 +53,37 @@ export default {
         },
         closeModal(){
             this.showModal = false;
+        },
+        animateButtons(){
+            const becomeButtons = document.querySelectorAll('.become-button');
+            let delay = 1250;
+
+            becomeButtons.forEach((becomeButton) => {
+                setTimeout(() => {
+                    becomeButton.classList.add('show');
+                }, delay);
+                delay += 1250;
+            });
         }
     },
     mounted(){
 
+        const observer = new IntersectionObserver((entries, observer)=>{
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    this.animateButtons();
+                    observer.unobserve(entry.target);
+                }
+            });
+        },
+        { threshold: 0.2 }
+        );
+
+        const becomeButtonContainer = document.getElementById('become-button-container');
+        observer.observe(becomeButtonContainer)
+
         const becomeButtons = document.querySelectorAll('.become-button');
-        
+
         becomeButtons.forEach((becomeButton) => {
             becomeButton.addEventListener('click', () => {
                 switch(becomeButton.classList[1]){

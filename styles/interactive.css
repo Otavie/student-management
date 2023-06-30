@@ -17,24 +17,34 @@
 
 .interactive-section {
   margin-top: 5rem;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 0.9fr 1fr;
-      grid-template-columns: 0.9fr 1fr;
-  gap: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 70vh;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .interactive-text {
   width: 100%;
+  min-height: 400px;
   position: relative;
+  margin-top: 3rem;
 }
 
 .interactive-image {
   position: relative;
   width: 100%;
   height: 100%;
+  height: 500px;
   overflow: hidden;
   z-index: 1;
+  margin: 0 auto;
+  margin-top: 2rem;
 }
 
 .interactive-image img {
@@ -75,9 +85,10 @@
 }
 
 .interactive-text-content {
-  min-height: 450px;
+  min-height: 100px;
   height: inherit;
   width: 100%;
+  margin-bottom: 2rem;
 }
 
 summary {
@@ -166,4 +177,45 @@ details p {
   transition: box-shadow ease-in-out 500ms, background-color ease-in-out 500ms, color ease-in-out 500ms, border ease-in-out 500ms;
   transition: box-shadow ease-in-out 500ms, background-color ease-in-out 500ms, color ease-in-out 500ms, border ease-in-out 500ms, -webkit-box-shadow ease-in-out 500ms;
   z-index: 1;
+}
+
+@media only screen and (min-width: 800px) {
+  .interactive-section {
+    margin-top: 5rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 0.9fr 1fr;
+        grid-template-columns: 0.9fr 1fr;
+    grid-auto-flow: auto;
+    gap: 2rem;
+    width: 100%;
+  }
+  .interactive-text {
+    margin-top: 0;
+  }
+  .interactive-image {
+    margin-top: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .interactive-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-transition: -webkit-transform ease-in-out 0.7s;
+    transition: -webkit-transform ease-in-out 0.7s;
+    transition: transform ease-in-out 0.7s;
+    transition: transform ease-in-out 0.7s, -webkit-transform ease-in-out 0.7s;
+  }
+  .interactive-text-content {
+    min-height: 450px;
+    margin-bottom: 0;
+  }
 }

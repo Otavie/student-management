@@ -9,14 +9,11 @@
 }
 
 .footer-section{
-  background-color: blue;
   font-family: var(--ff-primary-body);
   overflow-x: hidden;
 }
 
 .footer-section{
-  // font-family: var(--ff-primary-body);
-  // font-family: var(--ff-secondary-head);
   min-height: calc(100vh - 90px - 1px);
   background-color: var(--bg-menu-overlay);
   color: white;
@@ -31,7 +28,6 @@
 .footer-content{
   min-height: 50vh;
   width: 100%;
-  border: 1px solid blue;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -82,42 +78,39 @@
 
 
 .footer-without-logo{
-  border: 1px solid green;
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+  display: flex;
   width: 90%;
   margin: 0 auto;
+  justify-content: space-around;
   align-items: start;
-  margin: 2rem 0;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
-.programs-container h4,
-.about-footer-container h4,
-.resources-container h4,
-.get-help-container h4,
-.legal-container h4{
+.footer-box{
+  width: 180px;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.programs-container{
+  width: 250px;
+}
+
+.footer-box h4{
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 1rem;
-  margin-left: 10%;
 }
 
-.programs-container ul,
-.about-footer-container ul,
-.resources-container ul,
-.get-help-container ul,
-.legal-container ul{
+.footer-box ul{
   display: flex;
   flex-direction: column;
   width: 80%;
   margin: 0 auto;
 }
 
-.programs-container ul li,
-.about-footer-container ul li,
-.resources-container ul li,
-.get-help-container ul li,
-.legal-container ul li{
+.footer-box ul li{
   line-height: 2;
   font-size: 0.95rem;
   list-style: none;

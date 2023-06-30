@@ -55,6 +55,7 @@
 }
 
 .become-button{
+  opacity: 0;
   cursor: pointer;
   background-color: white;
   padding: 15px 30px;
@@ -62,7 +63,11 @@
   color: var(--bg-menu-overlay);
   font-size: 1rem;
   font-weight: 600;
-  transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, border 0.5s ease-in-out;
+  transition: opacity 1.5s ease-in-out, color 0.5s ease-in-out, background-color 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+
+.become-button.show{
+  opacity: 1;
 }
 
 .become-button:hover{

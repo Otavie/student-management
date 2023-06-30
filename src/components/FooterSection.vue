@@ -23,7 +23,7 @@
             
             <div class="footer-without-logo">
 
-                <div class="programs-container">
+                <div class="footer-box programs-container">
                     <h4>Programs</h4>
                     <ul>
                         <li>Frontend Development</li>
@@ -36,7 +36,7 @@
                     </ul>
                 </div>
 
-                <div class="about-footer-container">
+                <div class="footer-box about-footer-container">
                     <h4>About Us</h4>
                     <ul>
                         <li>Our Team</li>
@@ -46,7 +46,7 @@
                     </ul>                
                 </div>
 
-                <div class="resources-container">
+                <div class="footer-box resources-container">
                     <h4>Resources</h4>
                     <ul>
                         <li>Blog</li>
@@ -59,7 +59,7 @@
                     </ul>
                 </div>
 
-                <div class="get-help-container">
+                <div class="footer-box get-help-container">
                     <h4>Get Help</h4>
                     <ul>
                         <li>News</li>
@@ -73,7 +73,7 @@
                     </ul>
                 </div>
                 
-                <div class="legal-container">
+                <div class="footer-box legal-container">
                     <h4>Legal</h4>
                     <ul>
                         <li>Privacy Policy</li>

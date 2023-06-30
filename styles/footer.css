@@ -9,7 +9,6 @@
 }
 
 .footer-section {
-  background-color: blue;
   font-family: var(--ff-primary-body);
   overflow-x: hidden;
 }
@@ -37,7 +36,6 @@
 .footer-content {
   min-height: 50vh;
   width: 100%;
-  border: 1px solid blue;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -110,35 +108,38 @@
 }
 
 .footer-without-logo {
-  border: 1px solid green;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1.5fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 90%;
   margin: 0 auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  margin: 2rem 0;
+  gap: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.programs-container h4,
-.about-footer-container h4,
-.resources-container h4,
-.get-help-container h4,
-.legal-container h4 {
+.footer-box {
+  width: 180px;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.programs-container {
+  width: 250px;
+}
+
+.footer-box h4 {
   font-size: 1.1rem;
   font-weight: 500;
   margin-bottom: 1rem;
-  margin-left: 10%;
 }
 
-.programs-container ul,
-.about-footer-container ul,
-.resources-container ul,
-.get-help-container ul,
-.legal-container ul {
+.footer-box ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -150,11 +151,7 @@
   margin: 0 auto;
 }
 
-.programs-container ul li,
-.about-footer-container ul li,
-.resources-container ul li,
-.get-help-container ul li,
-.legal-container ul li {
+.footer-box ul li {
   line-height: 2;
   font-size: 0.95rem;
   list-style: none;
