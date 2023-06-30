@@ -78,6 +78,30 @@ html{
 
 .landing-img img{
   z-index: 3;
+  animation: slideIn 5s;
+}
+
+.landing-blob-right img,
+.landing-blob-left img{
+  animation: fadeIn 10s;
+}
+
+@keyframes slideIn{
+  from{
+    transform: translateX(150%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .landing-about{

@@ -21,7 +21,7 @@
                 <img src="../assets/landing-blob-right.png" alt="Landing Blog Right">
             </div>
             <div class="landing-img">
-                <img src="../assets/programmer.png" alt="Image of Student">
+                <img src="../assets/programmer1.png" alt="Image of Student">
             </div>
 
         </div>
@@ -31,7 +31,26 @@
 <script>
 export default {
     name: 'LandingPage',
-}
+    mounted(){
+        setTimeout(() => {
+            const landingImg = document.querySelector('.landing-img img');
+            if (landingImg) {
+                landingImg.classList.add('slideIn');
+            }
+        }, 10000);
+
+        setTimeout(() => {
+            const landingBlobRight = document.querySelector('.landing-blob-right img');
+            const landingBlobLeft = document.querySelector('.landing-blob-left img');
+            if (landingBlobRight) {
+                landingBlobRight.classList.add('fadeIn');
+            }
+            if (landingBlobLeft) {
+                landingBlobLeft.classList.add('fadeIn');
+            }
+        }, 2000);
+    },
+};
 
 </script>
 

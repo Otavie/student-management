@@ -95,6 +95,54 @@ html {
 
 .landing-img img {
   z-index: 3;
+  -webkit-animation: slideIn 5s;
+          animation: slideIn 5s;
+}
+
+.landing-blob-right img,
+.landing-blob-left img {
+  -webkit-animation: fadeIn 10s;
+          animation: fadeIn 10s;
+}
+
+@-webkit-keyframes slideIn {
+  from {
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .landing-about {
