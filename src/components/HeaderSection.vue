@@ -89,7 +89,7 @@ export default {
             isMenuOpen: false,
             theme: 'dark',
         };
-    }
+    },
 }
 </script>
 

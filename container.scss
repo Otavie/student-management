@@ -23,8 +23,6 @@ body{
   min-height: 100%;
   font-family: var(--ff-primary-body);
   overflow-x: hidden;
-  background-color: green;
-  // border: 10px solid red;
   overflow-x: hidden;
 }
 
@@ -32,25 +30,9 @@ body{
   font-family: var(--ff-primary-body);
   min-height: 200vh;
   width: 100%;
-  // background-color: var(--container-bg);
-  // display: grid;
-  // grid-template-rows: auto 1fr auto;
   overflow-x: hidden;
   background-color: white;
 }
-
-// .section-container{
-//   color: white;
-//   min-height: 40vh;
-//   background-color: var(--container-bg);
-//   margin-top: 90px;
-//   h1{
-//     font-size: 2.5rem;
-//     font-family: var(--ff-secondary-head);
-//     text-align: center;
-//   }
-//   // overflow-x: hidden;
-// }
 
 .section-header h1{
   padding: 1.5rem 0;
@@ -63,5 +45,4 @@ body{
   background-color: white;
   color: black;
   font-weight: 300;
-  // overflow-x: hidden;
 }
