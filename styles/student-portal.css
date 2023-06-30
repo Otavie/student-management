@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Bad+Script&family=Bebas+Neue&family=Cookie&family=Courgette&family=Explora&family=Italianno&family=Orbitron:wght@400;500;600;700;800;900&family=Oxanium:wght@200;300;400;500;600;700;800&family=Palanquin:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quintessential&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&family=Supermercado+One&family=Tangerine:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Zen+Kurenaido&display=swap");
+:root {
+  --ff-primary-body: 'Poppins', sans-serif;
+  --ff-primary-head: 'Orbitron', sans-serif;
+  --ff-secondary-head: 'Oxanium', cursive;
+}
+
+.student-portal-content-container {
+  text-align: justify;
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  color: black;
+}
+
+.student-portal-header h1 {
+  padding: 1.5rem 0;
+}
+
+.student-portal-content {
+  padding: 1rem;
+}
+
+.student-portal-content p {
+  margin: 1.5rem 0;
+}
+
+.student-portal-content h3 {
+  font-family: var(--ff-secondary-head);
+  text-align: center;
+  font-size: 1.25rem;
+  margin-top: -15px;
+}

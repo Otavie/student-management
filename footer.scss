@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Bad+Script&family=Bebas+Neue&family=Cookie&family=Courgette&family=Explora&family=Italianno&family=Orbitron:wght@400;500;600;700;800;900&family=Oxanium:wght@200;300;400;500;600;700;800&family=Palanquin:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quintessential&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&family=Supermercado+One&family=Tangerine:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Zen+Kurenaido&display=swap");
+:root {
+  --ff-primary-body: 'Poppins', sans-serif;
+  --ff-primary-head: 'Orbitron', sans-serif;
+  --ff-secondary-head: 'Oxanium', cursive;
+  --bg-header: #eb4034;
+  --bg-menu-overlay: #c22419;
+  --container-bg: #fce1df;
+}
+
+.footer-section{
+  background-color: blue;
+  font-family: var(--ff-primary-body);
+  overflow-x: hidden;
+}
+
+.footer-section{
+  // font-family: var(--ff-primary-body);
+  // font-family: var(--ff-secondary-head);
+  min-height: calc(100vh - 90px - 1px);
+  background-color: var(--bg-menu-overlay);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+
+.footer-content{
+  min-height: 50vh;
+  width: 100%;
+  border: 1px solid blue;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footer-with-logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.95rem;
+  margin: 3rem 0;
+}
+
+.footer-logo{
+  img{
+    z-index: 4;
+  }
+}
+
+.footer-social-media{
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-social-media .social-media{
+  width: 250px;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer-social-media .social-media img{
+  height: 35px;
+  cursor: pointer;
+  box-shadow: 0px -2px 2px white;
+  padding: 5px;
+  border-radius: 19px;
+  transition: border-radius 500ms ease-in-out;
+}
+
+.footer-social-media .social-media img:hover{
+  border-radius: 0px;
+}
+
+
+.footer-without-logo{
+  border: 1px solid green;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+  width: 90%;
+  margin: 0 auto;
+  align-items: start;
+  margin: 2rem 0;
+}
+
+.programs-container h4,
+.about-footer-container h4,
+.resources-container h4,
+.get-help-container h4,
+.legal-container h4{
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  margin-left: 10%;
+}
+
+.programs-container ul,
+.about-footer-container ul,
+.resources-container ul,
+.get-help-container ul,
+.legal-container ul{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.programs-container ul li,
+.about-footer-container ul li,
+.resources-container ul li,
+.get-help-container ul li,
+.legal-container ul li{
+  line-height: 2;
+  font-size: 0.95rem;
+  list-style: none;
+}
+
+.copy-right{
+  font-size: 0.75rem;
+  color: #CCC;
+  font-weight: 500;
+  height: 80px;
+  background-color: var(--bg-menu-overlay);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Bad+Script&family=Bebas+Neue&family=Cookie&family=Courgette&family=Explora&family=Italianno&family=Orbitron:wght@400;500;600;700;800;900&family=Oxanium:wght@200;300;400;500;600;700;800&family=Palanquin:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quintessential&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&family=Supermercado+One&family=Tangerine:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Zen+Kurenaido&display=swap");
+:root {
+  --ff-primary-body: 'Poppins', sans-serif;
+  --ff-primary-head: 'Orbitron', sans-serif;
+  --ff-secondary-head: 'Oxanium', cursive;
+  --bg-header: #eb4034;
+  --bg-menu-overlay: #c22419;
+  --container-bg: #fce1df;
+}
+
+.take-leap-container{
+  font-family: var(--ff-primary-body);
+  min-height: 40vh;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+.take-leap{
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-menu-overlay);
+  gap: 1.5rem;
+  color: black;
+  text-shadow: 1px 0px 2px white;
+  padding: 0 5%;
+}
+
+.take-leap a{
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-family: var(--ff-secondary-head);
+  font-weight: 700;
+}
+
+
+.take-leap h2{
+  font-size: 2.5rem;
+  text-align: center;
+  z-index: 1;
+  font-weight: 600;
+}
+
+.h2-leap{
+  color: white;
+  text-shadow: 1px 0px 2px black;
+}
+
+.apply-button{
+  cursor: pointer;
+  font-size: 1.05rem;
+  color: var(--bg-menu-overlay);
+  font-weight: 600;
+  padding: 17px 40px;
+  background-color: white;
+  border: 1px solid white;
+  transition: box-shadow ease-in-out 500ms, background-color ease-in-out 500ms, color ease-in-out 500ms, border ease-in-out 500ms;
+  z-index: 1;
+  text-shadow: 0px 0px 0px var(--bg-menu-overlay);
+}
+
+.apply-button:hover{
+  box-shadow: 0px 2px 1px black;
+  background-color: var(--bg-menu-overlay);
+  color: white;
+  border: 1px solid white;
+  text-shadow: 0px 0px 0px white;
+}
+

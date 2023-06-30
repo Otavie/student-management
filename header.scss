@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Bad+Script&family=Bebas+Neue&family=Cookie&family=Courgette&family=Explora&family=Italianno&family=Orbitron:wght@400;500;600;700;800;900&family=Oxanium:wght@200;300;400;500;600;700;800&family=Palanquin:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quintessential&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&family=Supermercado+One&family=Tangerine:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Zen+Kurenaido&display=swap");
+:root {
+  --ff-primary-body: 'Poppins', sans-serif;
+  --ff-primary-head: 'Orbitron', sans-serif;
+  --ff-secondary-head: 'Oxanium', cursive;
+  --bg-header: #052669;
+  --bg-header: #eb4034;
+  --bg-menu-overlay: #c22419;
+}
+
+.header{
+  height: 90px;
+  color: var(--bg-menu-overlay);
+  color: var(--bg-menu-overlay);
+  background-color: var(--bg-header);
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo img{
+  height: 50px;
+  cursor: pointer;
+}
+
+.header-logo{
+  z-index: 4;
+  height: 50px;
+  width: 180px;
+  font-family: var(--ff-secondary-head);
+  font-family: var(--ff-primary-head);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  text-shadow: 0px 1px 2px black;
+}
+
+.header-actions{
+  display: flex;
+  width: 8rem;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-icon,
+.theme-toggle{
+  width: 40px;
+  height: 40px;  
+  z-index: 4;
+}
+
+.menu-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-icon img{
+  height: 36px;
+  width: 32px;
+  cursor: pointer;
+}
+
+.menu-icon img.close-menu{
+  height: 40px;
+  width: 40px;
+}
+
+.theme-toggle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+.theme-toggle img{
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.theme-toggle img.theme-toggle-icon-moon{
+  height: 45px;
+  width: 45px;
+}
+
+.menu-overlay{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.menu-overlay .menu{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.menu-overlay .menu ul{
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-overlay .menu ul li{
+  list-style-type: none;
+}
+
+.menu-overlay .menu ul a{
+  text-decoration: none;
+  font-family: var(--ff-secondary-head);
+  font-weight: 600;
+  font-size: 1.125rem;
+}

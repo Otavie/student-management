@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Bad+Script&family=Bebas+Neue&family=Cookie&family=Courgette&family=Explora&family=Italianno&family=Orbitron:wght@400;500;600;700;800;900&family=Oxanium:wght@200;300;400;500;600;700;800&family=Palanquin:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quintessential&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&family=Supermercado+One&family=Tangerine:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Zen+Kurenaido&display=swap");
+:root {
+  --ff-primary-body: 'Poppins', sans-serif;
+  --ff-primary-head: 'Orbitron', sans-serif;
+  --ff-secondary-head: 'Oxanium', cursive;
+  --bg-header: #eb4034;
+  --bg-menu-overlay: #c22419;
+  --container-bg: #fce1df;
+}
+
+.to-become-container {
+  font-family: var(--ff-primary-body);
+  min-height: 40vh;
+  background-color: white;
+  overflow-x: hidden;
+}
+
+.to-become {
+  min-height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--bg-menu-overlay);
+  gap: 1.5rem;
+  color: black;
+  text-shadow: 1px 0px 2px white;
+}
+
+.to-become a {
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-family: var(--ff-secondary-head);
+  font-weight: 700;
+}
+
+.become-head {
+  margin-top: 4rem;
+}
+
+.to-become .apply-button {
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+.become-button-container {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 150px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1rem;
+  overflow-x: hidden;
+}
+
+.become-button {
+  cursor: pointer;
+  background-color: white;
+  padding: 15px 30px;
+  border: 1px solid var(--bg-menu-overlay);
+  color: var(--bg-menu-overlay);
+  font-size: 1rem;
+  font-weight: 600;
+  -webkit-transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, border 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out, border 0.5s ease-in-out;
+}
+
+.become-button:hover {
+  background-color: var(--bg-menu-overlay);
+  color: white;
+  border: 1px solid white;
+}
+
+.to-become h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  z-index: 1;
+  font-weight: 600;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 3;
+}
+
+.modal-content {
+  width: 70%;
+  max-height: 80%;
+  overflow-y: auto;
+  background-color: white;
+  padding: 20px;
+  padding-right: 40px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  text-align: center;
+  line-height: 1.75rem;
+}
+
+.modal-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.modal-text {
+  margin-bottom: 20px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}

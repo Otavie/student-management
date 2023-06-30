@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Bad+Script&family=Bebas+Neue&family=Cookie&family=Courgette&family=Explora&family=Italianno&family=Orbitron:wght@400;500;600;700;800;900&family=Oxanium:wght@200;300;400;500;600;700;800&family=Palanquin:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quintessential&family=Saira+Semi+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Satisfy&family=Supermercado+One&family=Tangerine:wght@400;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Zen+Kurenaido&display=swap");
+:root {
+  --ff-primary-body: 'Poppins', sans-serif;
+  --ff-primary-head: 'Orbitron', sans-serif;
+  --ff-secondary-head: 'Oxanium', cursive;
+  --container-bg: #9cc2e4;
+  --container-bg: #fce1df;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  overflow-x: hidden;
+}
+
+body{
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100%;
+  font-family: var(--ff-primary-body);
+  overflow-x: hidden;
+  background-color: green;
+  // border: 10px solid red;
+  overflow-x: hidden;
+}
+
+.container {
+  font-family: var(--ff-primary-body);
+  min-height: 200vh;
+  width: 100%;
+  // background-color: var(--container-bg);
+  // display: grid;
+  // grid-template-rows: auto 1fr auto;
+  overflow-x: hidden;
+  background-color: white;
+}
+
+// .section-container{
+//   color: white;
+//   min-height: 40vh;
+//   background-color: var(--container-bg);
+//   margin-top: 90px;
+//   h1{
+//     font-size: 2.5rem;
+//     font-family: var(--ff-secondary-head);
+//     text-align: center;
+//   }
+//   // overflow-x: hidden;
+// }
+
+.section-header h1{
+  padding: 1.5rem 0;
+}
+
+.sub-section-container{
+  text-align: justify;
+  width: 90%;
+  margin: 0 auto;
+  background-color: white;
+  color: black;
+  font-weight: 300;
+  // overflow-x: hidden;
+}
