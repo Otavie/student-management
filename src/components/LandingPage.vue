@@ -21,7 +21,7 @@
                 <img src="../assets/landing-blob-right.png" alt="Landing Blog Right">
             </div>
             <div class="landing-img">
-                <img src="../assets/programmer1.png" alt="Image of Student">
+                <img src="../assets/programmer.png" alt="Image of Student">
             </div>
 
         </div>

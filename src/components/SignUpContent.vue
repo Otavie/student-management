@@ -8,12 +8,12 @@
                 <div class="login-content-inner">
                     <div class="login-content">
                         <div class="login-image">
-                            <img src="../assets/big-logo.png" alt="Login Form Logo">
+                            <img src="../assets/logo.png" alt="Login Form Logo">
                             <div class="circle circle-shadow"> </div>
                         </div>
                         <div class="login-form-container" id="login-form-container">
                             <div class="big-logo">
-                                <img src="../assets/big-logo.png" alt="Big Logo at the Background">
+                                <img src="../assets/logo.png" alt="Big Logo at the Background">
                             </div>
                             <div class="login-header">
                                 <h2>Sign Up!</h2>
