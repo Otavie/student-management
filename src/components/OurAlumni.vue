@@ -97,6 +97,25 @@
                 </div>
             </div>
 
+            <div class="alumni-box student-6">
+                <div class="alumni-head">
+                    <div class="alumni-head-image">
+                        <img src="../assets/graduate6.png" alt="Alumni 6">
+                    </div>
+                    <div class="alumni-head-describe">
+                        <div class="alumni-name">
+                            <p>Otavie Okuoyo</p>
+                        </div>
+                        <div class="alumni-company">
+                            <h3>Microsoft</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="student-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A alias accusamus rem asperiores tenetur ea eaque saepe quas ut et dolores itaque sequi odit nisi ducimus.</p>
+                </div>
+            </div>
+
         </div>
     </div>
 </template>

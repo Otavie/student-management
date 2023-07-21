@@ -55,6 +55,7 @@
 }
 
 .become-button{
+  border-radius: 1rem;
   opacity: 0;
   cursor: pointer;
   background-color: white;
@@ -82,7 +83,6 @@
   z-index: 1;
   font-weight: 600;
 }
-
 
 .modal {
   display: none;
